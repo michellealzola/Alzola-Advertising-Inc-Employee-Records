@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lBoxEmployeeInfo = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.lBoxEmployeeInfo.ItemHeight = 29;
             this.lBoxEmployeeInfo.Location = new System.Drawing.Point(377, 50);
             this.lBoxEmployeeInfo.Name = "lBoxEmployeeInfo";
-            this.lBoxEmployeeInfo.Size = new System.Drawing.Size(411, 352);
+            this.lBoxEmployeeInfo.Size = new System.Drawing.Size(411, 294);
             this.lBoxEmployeeInfo.TabIndex = 1;
             // 
             // label5
@@ -65,11 +66,23 @@
             this.label5.Text = "©2023 Michelle Alzola | www.michellealzoladesign.com";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(377, 351);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(411, 51);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // EmployeeRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lBoxEmployeeInfo);
             this.Controls.Add(this.pictureBox1);
@@ -87,5 +100,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.ListBox lBoxEmployeeInfo;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClose;
     }
 }

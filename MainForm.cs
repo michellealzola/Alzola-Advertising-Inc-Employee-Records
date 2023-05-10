@@ -24,6 +24,8 @@ namespace Employee_Class
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
+            lBoxEmployeeRecord.Items.Clear();
+
             name = tBoxInputName.Text;
             id = tBoxInputIdNumber.Text;
             department = tBoxInputDepartment.Text;
@@ -49,11 +51,50 @@ namespace Employee_Class
             {
                 lBoxEmployeeRecord.Items.Add(employees[i].Name.ToString());
             }
+
+            tBoxInputName.Text = "";
+            tBoxInputIdNumber.Text = "";
+            tBoxInputDepartment.Text = "";
+            tBoxInputPosition.Text = "";
+
+            tBoxInputName.Focus();
         }
 
         private void lBoxEmployeeRecord_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int index = lBoxEmployeeRecord.SelectedIndex;
 
+            if (index != -1)
+            {
+                name = employees[index].Name.ToString();
+                id = employees[index].IdNumber.ToString();
+                department = employees[index].Department.ToString();    
+                position = employees[index].Position.ToString();
+            }
+
+            EmployeeRecordForm employeeRecordForm = new EmployeeRecordForm();
+
+            employeeRecordForm.lBoxEmployeeInfo.Items.Add("Name: " + name);
+            employeeRecordForm.lBoxEmployeeInfo.Items.Add ("ID Number: " + id);
+            employeeRecordForm.lBoxEmployeeInfo.Items.Add("Department: " + department);
+            employeeRecordForm.lBoxEmployeeInfo.Items.Add("Position: " + position);
+
+            employeeRecordForm.ShowDialog();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            tBoxInputName.Text = "";
+            tBoxInputIdNumber.Text = "";
+            tBoxInputDepartment.Text = "";
+            tBoxInputPosition.Text = "";
+
+            tBoxInputName.Focus();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
