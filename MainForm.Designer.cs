@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tBoxInputName = new System.Windows.Forms.TextBox();
-            this.tBoxInputIdNumber = new System.Windows.Forms.TextBox();
-            this.tBoxInputDepartment = new System.Windows.Forms.TextBox();
             this.tBoxInputPosition = new System.Windows.Forms.TextBox();
+            this.tBoxInputDepartment = new System.Windows.Forms.TextBox();
+            this.tBoxInputIdNumber = new System.Windows.Forms.TextBox();
+            this.tBoxInputName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lBoxEmployeeRecord = new System.Windows.Forms.ListBox();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
@@ -77,43 +78,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add New Employee Record";
             // 
-            // groupBox2
+            // tBoxInputPosition
             // 
-            this.groupBox2.Controls.Add(this.lBoxEmployeeRecord);
-            this.groupBox2.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(622, 227);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(565, 412);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Display Employee Record";
+            this.tBoxInputPosition.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBoxInputPosition.Location = new System.Drawing.Point(167, 275);
+            this.tBoxInputPosition.Name = "tBoxInputPosition";
+            this.tBoxInputPosition.Size = new System.Drawing.Size(354, 34);
+            this.tBoxInputPosition.TabIndex = 7;
             // 
-            // label1
+            // tBoxInputDepartment
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
+            this.tBoxInputDepartment.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBoxInputDepartment.Location = new System.Drawing.Point(167, 208);
+            this.tBoxInputDepartment.Name = "tBoxInputDepartment";
+            this.tBoxInputDepartment.Size = new System.Drawing.Size(354, 34);
+            this.tBoxInputDepartment.TabIndex = 6;
             // 
-            // label2
+            // tBoxInputIdNumber
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 143);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ID Number:";
+            this.tBoxInputIdNumber.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBoxInputIdNumber.Location = new System.Drawing.Point(167, 140);
+            this.tBoxInputIdNumber.Name = "tBoxInputIdNumber";
+            this.tBoxInputIdNumber.Size = new System.Drawing.Size(354, 34);
+            this.tBoxInputIdNumber.TabIndex = 5;
             // 
-            // label3
+            // tBoxInputName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 211);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 26);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Department:";
+            this.tBoxInputName.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBoxInputName.Location = new System.Drawing.Point(167, 75);
+            this.tBoxInputName.Name = "tBoxInputName";
+            this.tBoxInputName.Size = new System.Drawing.Size(354, 34);
+            this.tBoxInputName.TabIndex = 4;
             // 
             // label4
             // 
@@ -124,37 +119,43 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Position";
             // 
-            // tBoxInputName
+            // label3
             // 
-            this.tBoxInputName.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxInputName.Location = new System.Drawing.Point(167, 75);
-            this.tBoxInputName.Name = "tBoxInputName";
-            this.tBoxInputName.Size = new System.Drawing.Size(354, 34);
-            this.tBoxInputName.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 211);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 26);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Department:";
             // 
-            // tBoxInputIdNumber
+            // label2
             // 
-            this.tBoxInputIdNumber.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxInputIdNumber.Location = new System.Drawing.Point(167, 140);
-            this.tBoxInputIdNumber.Name = "tBoxInputIdNumber";
-            this.tBoxInputIdNumber.Size = new System.Drawing.Size(354, 34);
-            this.tBoxInputIdNumber.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(29, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ID Number:";
             // 
-            // tBoxInputDepartment
+            // label1
             // 
-            this.tBoxInputDepartment.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxInputDepartment.Location = new System.Drawing.Point(167, 208);
-            this.tBoxInputDepartment.Name = "tBoxInputDepartment";
-            this.tBoxInputDepartment.Size = new System.Drawing.Size(354, 34);
-            this.tBoxInputDepartment.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name:";
             // 
-            // tBoxInputPosition
+            // groupBox2
             // 
-            this.tBoxInputPosition.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxInputPosition.Location = new System.Drawing.Point(167, 275);
-            this.tBoxInputPosition.Name = "tBoxInputPosition";
-            this.tBoxInputPosition.Size = new System.Drawing.Size(354, 34);
-            this.tBoxInputPosition.TabIndex = 7;
+            this.groupBox2.Controls.Add(this.lBoxEmployeeRecord);
+            this.groupBox2.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(622, 227);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(565, 412);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Display Employee Record";
             // 
             // lBoxEmployeeRecord
             // 
@@ -219,6 +220,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Employee Records";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
