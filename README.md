@@ -4,7 +4,7 @@ https://github.com/michellealzola/Alzola-Advertising-Inc-Employee-Records/assets
 
 
 # How to Install as a Standalone App in Machine
-- download: 
+- Download: 
 [Employee Records App.zip](https://github.com/michellealzola/Alzola-Advertising-Inc-Employee-Records/files/11452579/Employee.Records.App.zip)
 - Make sure you are using Windows 10 and newer version
 - Unzip the file
