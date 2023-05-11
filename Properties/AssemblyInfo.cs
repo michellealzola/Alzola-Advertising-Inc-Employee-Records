@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Employee Class")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Family")]
+[assembly: AssemblyCompany("www.michellealzoladesign.com")]
 [assembly: AssemblyProduct("Employee Class")]
-[assembly: AssemblyCopyright("Copyright © Family 2023")]
+[assembly: AssemblyCopyright("Copyright © Michelle Alzola 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
