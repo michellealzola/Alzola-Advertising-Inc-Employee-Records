@@ -7,7 +7,7 @@
     <ProjectGuid>{9FE8033B-F6DB-4053-BF8A-23D1524D64E5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Employee_Class</RootNamespace>
-    <AssemblyName>Employee Records</AssemblyName>
+    <AssemblyName>Employee Records Entry</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
